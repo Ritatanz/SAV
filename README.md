@@ -83,7 +83,7 @@ for VIDEO_FILE in ${DATA_DIR}/*; do
 
   mkdir -p ${FRAME_DIR}
 
-  ffmpeg -i ${VIDEO_FILE} -r 30 -q:v 1 ${FRAME_DIR}/img_%05d.jpg
+  ffmpeg -i ${VIDEO_FILE} -r 30 -q:v 1 ${FRAME_DIR}/img_%06d.jpg
 
   FRAME_COUNT=$(ls -1 ${FRAME_DIR} | wc -l)
 
