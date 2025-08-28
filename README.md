@@ -115,12 +115,12 @@ Download the SAV dataset with the following structure:
 SAV
 |_ frames
 |  |_ [video name 0]
-|  |  |_ img_00001.jpg
-|  |  |_ img_00002.jpg
+|  |  |_ img_000001.jpg
+|  |  |_ img_000002.jpg
 |  |  |_ ...
 |  |_ [video name 1]
-|     |_ img_00001.jpg
-|     |_ img_00002.jpg
+|     |_ img_000001.jpg
+|     |_ img_000002.jpg
 |     |_ ...
 |_ frame_list
 |  |_ train.csv
