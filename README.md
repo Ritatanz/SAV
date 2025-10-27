@@ -139,9 +139,35 @@ SAV
 
 ```
 
-# VideoMAE Det.
-We run the VideoMAE Det. from mmaction2[here](https://github.com/open-mmlab/mmaction2) and change the mmaction/datasets/ava_dataset.py into our ava_dataset.py, mmaction/models/roi_heads/bbox_heads/bbox_head.py into our bbox_head.py, mmaction/evalution/metrics/ava_metric.py into our ava_metric.py,  mmaction/evalution/functional/ava_utils.py into our ava_utils.py, test/dataset/test_ava_dataset.py into our test_ava_dataset.py for our SAV Dataset.
+## VideoMAE Det.
+We run the VideoMAE Det. from mmaction2 [here](https://github.com/open-mmlab/mmaction2) and change the mmaction/datasets/ava_dataset.py into our ava_dataset.py, mmaction/models/roi_heads/bbox_heads/bbox_head.py into our bbox_head.py, mmaction/evalution/metrics/ava_metric.py into our ava_metric.py,  mmaction/evalution/functional/ava_utils.py into our ava_utils.py, test/dataset/test_ava_dataset.py into our test_ava_dataset.py for our SAV Dataset.
 
-# Configs.
+## Configs.
+[vit-base-p16_videomae-k400-pre_8xb8-16x4x1-20e-adamw_sav-rgb.py](https://github.com/Ritatanz/SAV/blob/main/vit-base-p16_videomae-k400-pre_8xb8-16x4x1-20e-adamw_sav-rgb.py) is the CONFIG_FILE of SAV dataset.
+[vit-base-p16_videomae-k400-pre_8xb8-16x4x1-20e-adamw_ava-rgb.py](https://github.com/Ritatanz/SAV/blob/main/vit-base-p16_videomae-k400-pre_8xb8-16x4x1-20e-adamw_ava-rgb.py) is the CONFIG_FILE of AVA dataset.
 
+## Train.
+Following the command in [mmaction2](https://github.com/open-mmlab/mmaction2/tree/main/configs/detection/videomae)
+```shell
+python tools/train.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+```
 
+## Test.
+Following the command in [mmaction2](https://github.com/open-mmlab/mmaction2/tree/main/configs/detection/videomae)
+```shell
+python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+```
+
+## Citation
+
+```BibTeX
+@article{tan2025towards,
+  title={Towards Student Actions in Classroom Scenes: New Dataset and Baseline},
+  author={Tan, Zhuolin and Gao, Chenqiang and Qin, Anyong and Chen, Ruixin and Song, Tiecheng and Yang, Feng and Meng, Deyu},
+  journal={IEEE Transactions on Multimedia},
+  volume={27},
+  pages={6831--6844},
+  year={2025},
+  publisher={IEEE}
+}
+```
