@@ -159,7 +159,7 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 ## Citation
-
+If you find our code or paper useful, please cite as
 ```BibTeX
 @article{tan2025towards,
   title={Towards Student Actions in Classroom Scenes: New Dataset and Baseline},
